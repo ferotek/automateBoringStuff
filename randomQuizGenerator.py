@@ -23,10 +23,7 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
 
 
 
-keys =  list(capitals.keys())
-random.shuffle(keys)
 
-answers = []
 
 
 
@@ -46,6 +43,11 @@ answers = []
 for quizNum in range(5):
     stringQuiz = "States Quiz\n\n"
     stringKey = ""
+    
+    keys =  list(capitals.keys())
+    random.shuffle(keys)
+
+    answers = []
     
 
     for i in range(0,len(capitals)):
